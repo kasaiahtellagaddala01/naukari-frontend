@@ -16,8 +16,17 @@
     </nav>
   </header>
 
-  <main id="job-list">
-    <!-- Jobs will be listed here dynamically -->
+  <main>
+    <h2>Available Jobs</h2>
+    <button onclick="fetchJobs()">Load Jobs</button>
+    <ul id="job-list">
+      <!-- Jobs will be listed here dynamically -->
+    </ul>
+
+    <h2>Add a New Job</h2>
+    <input type="text" id="jobTitle" placeholder="Job Title">
+    <input type="text" id="jobDescription" placeholder="Job Description">
+    <button onclick="addJob()">Post Job</button>
   </main>
 
   <script src="app.js"></script>
